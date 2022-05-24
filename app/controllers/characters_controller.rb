@@ -20,7 +20,7 @@ class CharactersController < ApplicationController
   
       else 
   
-    render json: @characters
+    render json: @characters, each_serializer: CharacterShowSerializerSerializer
       end
   
     end
