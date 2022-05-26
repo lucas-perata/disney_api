@@ -15,9 +15,7 @@ class MoviesController < ApplicationController
         
      render json: Movie.where(genre_id: params[:genre])
   
-    #   elsif not params[:movies].nil? 
-  
-    #     render json: Character.where(movie_id: params[:movies])
+    
   
      elsif params[:order] == "ASC"
 
@@ -73,7 +71,7 @@ class MoviesController < ApplicationController
   
       # Only allow a list of trusted parameters through.
       def movie_params
-        params.require(:movie).permit(:character_id, :image_url, :title, :year, :rating, :genre_id)
+        params.require(:movie).permit(:image_url, :title, :rating, :genre_id, :release_date)
       end
   end
   
