@@ -28,7 +28,7 @@ class MoviesController < ApplicationController
 
      else 
   
-        render json: @movies
+        render json: @movies, each_serializer: MovieIndexSerializer 
      end 
      
     end
@@ -61,6 +61,8 @@ class MoviesController < ApplicationController
     # DELETE /movies/1
     def destroy
       @movie.destroy
+      @movies = Movie.all
+      render json: @movies, each_serializer: MovieIndexSerializer 
     end
   
     private
