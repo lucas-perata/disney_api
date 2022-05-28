@@ -17,9 +17,9 @@ class SessionsController < Devise::SessionsController
   #   render json: { message: "You are logged out." }, status: :ok
   # end
 
-  # def log_out_failure
-  #   render json: { message: "Hmm nothing happened."}, status: :unauthorized
-  # end
+   def log_out_failure
+     render json: { message: "Hmm nothing happened."}, status: :unauthorized
+   end
 
   def respond_with(resource, _opts = {})
     render json: resource
@@ -27,7 +27,9 @@ class SessionsController < Devise::SessionsController
 
   def respond_to_on_destroy 
   
-    render json: {message: "Goodbye"}
+    
+    render json: {message: "You are logged out."} 
+    
   end 
 
 end

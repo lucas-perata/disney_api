@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :characters 
   resources :movies
+  resources :genres, only: [:index, :create]
   resources :character_movies, only: [:create, :index]
 
   devise_for :users, skip: %i[registrations sessions passwords]
