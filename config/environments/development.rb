@@ -1,6 +1,7 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
@@ -64,4 +65,22 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_caching = false
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  
+  
+    config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+    port: 587,
+    user_name: "contacto.perata",
+    domain:               'gmail.com',
+    password: "sthexnyujzdbgonu",
+    authentication: "plain",
+    enable_starttls_auto: true
+    }
+
+
 end
