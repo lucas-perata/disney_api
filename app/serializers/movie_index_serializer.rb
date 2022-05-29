@@ -1,3 +1,3 @@
 class MovieIndexSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :img_url, :title, :release_date
 end
