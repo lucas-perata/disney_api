@@ -9,6 +9,6 @@ class CreateMailer < ApplicationMailer
     @greeting = "Hi"
 
     
-    mail to: User.last.email, from: "contacto.perata@gmail.com"
+    mail to: User.last.email, from: "contacto.perata@gmail.com", subject: "Welcome to disney_api"
   end
 end
