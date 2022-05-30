@@ -1,5 +1,5 @@
 class CharacterMoviesController < ApplicationController
-
+  before_action :authenticate_user!
     def index 
       @character_movies = CharacterMovie.all 
       render json: @character_movies
