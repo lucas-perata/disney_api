@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Disney_api es un proyecto para Alkemy. 
 
-Things you may want to cover:
+El objetivo es desarrollar una API para explorar el mundo de Disney, la cual permitirá conocer y modificar los
+personajes que lo componen y entender en qué películas estos participaron. Por otro lado, deberá
+exponer la información para que cualquier frontend pueda consumirla.
 
-* Ruby version
+## Documentación 
+A continuación, dejo la documentación de cada sección realizada en Postman. 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Asociaciones:
+https://documenter.getpostman.com/view/21120859/Uz5CLxxP 
+Géneros:
+https://documenter.getpostman.com/view/21120859/Uz5CLxxR
+Personajes:
+https://documenter.getpostman.com/view/21120859/Uz5CLxxS
+Películas: 
+https://documenter.getpostman.com/view/21120859/Uz5CLxxT
+Usuarios: 
+https://documenter.getpostman.com/view/21120859/Uz5CKcxG
