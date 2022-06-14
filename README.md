@@ -1,6 +1,6 @@
 # README
 
-Disney_api es un proyecto para Alkemy. 
+Disney_api
 
 El objetivo es desarrollar una API para explorar el mundo de Disney, la cual permitirá conocer y modificar los
 personajes que lo componen y entender en qué películas estos participaron. Por otro lado, deberá
